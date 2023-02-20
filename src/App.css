@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=Oswald:wght@300&family=Poppins:wght@300;400;500;600&family=Roboto&family=Roboto+Condensed:ital,wght@1,300&family=Source+Sans+Pro:ital,wght@0,300;1,600&family=Trocchi&display=swap');
+
+ *{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+ }
+ :root{
+  --PrimaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gradientColor:-linear-gradient(to-right,rgb(14, 127, 143),hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whitecolorDeam:hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --inputColor:rgb(239,240,246);
+  --bodyColor:rgb(240,240,240);
+  --cardBG:rgb(225,225,235);
+
+ }
+ html{
+   scroll-behavior: smooth;
+ }
+
+ 
+ a{
+  text-decoration: none;
+ }
+ li{
+  list-style: none;
+ }
+ .section{
+   padding:4rem 0 2rem
+ }
+ .container{
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+ }
+ .icon{
+  font-size: 2rem;
+  cursor:pointer;
+ }
+ .flex{
+  display:flex;
+  align-items: center;
+ }
+ .grid{
+  display:grid;
+  align-items: center;
+ }
+ .btn{
+  padding:.6rem 1.5rem;
+  background-color: var(--PrimaryColor);
+  border-radius:3rem;
+  border:none;
+  outline:none;
+  cursor:pointer;
+ }
+ .btn a{
+  color:var(--gradientColor);
+  font-weight: 500;
+
+ }
+ .btn:hover{
+  background: var(--SecondaryColor);
+
+ }
+ img,video{
+  width:100%;
+  height:auto;
+ }
+ input{
+  font-size: 100%;
+ }
+ body{
+  background: var(--bodyColor);
+ }
+ .btn{
+  margin:1rem;
+ }
+ .listofevents{
+  width: 500px;
+  padding: 2rem;
+  box-shadow: 10px 10px 10px 10px rgba(128, 128, 128, 0.497);
+  background-image: linear-gradient(to right, #1561bd7c, #1e8fff94,#74b3ce);
+  border-radius: 1rem;
+ }
+ .listofevents:hover{
+  background-color: rgba(128, 128, 128, 0.379);
+ }
+ .maindiv{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+ }
+ 
+.MuiFormHelperText-root{
+  color:red !important;
+}
+ @media screen and (min-width:1240px){
+  .container{
+    width:80% !important;
+    margin:auto !important;
+  }
+  .section{
+    padding:6rem 0.4rem;
+  }
+ }
+ @media screen and (min-width:2560px){
+  body{
+    zoom:1.7;
+  }
+
+ }
+ /* @media screen and (min-width:500px){
+  
+  .maindiv{
+    display: flex;
+    flex-direction: column;
+  }
+ } */
+ .container1{
+  margin-top: 100px;
+ }
+ .container2{
+  margin-top: 250px;
+  
+ }
+ .container3{
+  margin-top: 270px;
+  
+ }
+

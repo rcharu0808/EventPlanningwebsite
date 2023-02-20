@@ -1,0 +1,19 @@
+{
+  "eventdatas": [
+    {
+      "id": 1,
+      "venue": "kalpana chamber",
+      "eventname": "music with balaji",
+      "date": "2/2/2023",
+      "time": "2pm"
+    },
+    {
+      "venue": "brilliant Hall",
+      "eventname": "web 3.0",
+      "date": "jan23",
+      "time": "2pm",
+      "active": true,
+      "id": 2
+    }
+  ]
+}

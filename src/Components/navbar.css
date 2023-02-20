@@ -1,0 +1,204 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: -linear-gradient(
+    to-right,
+    rgb(29, 138, 153),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whitecolorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 240, 246);
+  --bodyColor: rgb(240, 240, 240);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.navBarSection {
+  position: fixed;
+  top: 0;
+}
+
+.navBar {
+  background-color: transparent !important;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whitecolorDeam);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+}
+.header .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  transform: translateY(5px);
+}
+@media screen and (max-width: 768px) {
+  .header .navBar {
+    position: fixed;
+    background-color: inherit;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: -500rem;
+    padding: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    transition: 0.5s ease-in-out;
+  }
+  .header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0.5rem 0;
+  }
+  .header .navBar .navLists .navItem .button {
+    margin-right: 20px;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .navLists .btn3 {
+    margin-top: 1rem;
+  }
+  .header .navBar .navLists .btn3 a {
+    font-weight: 600;
+    color: var(--whiteColor);
+  }
+  .header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .closeNavbar:hover {
+    color: var(--SecondaryColor);
+  }
+  .header .activeNavbar {
+    top: 7rem;
+  }
+}
+.header .toggleNavbar .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+}
+.header .toggleNavbar:hover.icon {
+  color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar,
+.closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  .header .navBar {
+    background-color: white;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    padding: 0 0.45rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .navLists .btn3 {
+    margin-left: 1rem;
+  }
+  .header .navBar .navLists a {
+    color: var(--whiteColor);
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar {
+    background-color: inherit;
+  }
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header {
+    padding: 0.5rem 1rem;
+  }
+}
+.navBar {
+  background-color: #ededed !important;
+  z-index: 100000;
+}
+
+.navItem {
+  background-color: #ededed !important;
+  text-decoration: none;
+}
+
+.navBarSection {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+}
+
+.navLink {
+  font-size: 25px;
+}
+
+.titleakbar {
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.logoakbar {
+  width: 50px;
+}
+
+.logout {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  background: var(--PrimaryColor);
+}/*# sourceMappingURL=navbar.css.map */
